@@ -14,7 +14,8 @@ class SzakdogaController extends Controller
 
     public function torol($id)
     {
-        Szakdoga::find($id)->delete();
+        $szakdoga=Szakdoga::find($id);
+        $szakdoga->delete();
     }
 
     public function ujSzakdoga(Request $req)
